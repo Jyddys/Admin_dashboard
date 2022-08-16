@@ -34,7 +34,22 @@ ul {
   margin-top: 20px;
   width: 30%;
   background-color: rgba(205, 205, 205, 0.29);
+  border: solid 1px black;
   border-radius: 10px;
+}
+
+form.example button {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 15px;
+  padding: 6px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(9, 131, 212);
+}
+form.example button:hover {
+  background: white;
 }
 
 /* Greeting */
@@ -52,14 +67,15 @@ ul {
 
 .avatar {
   position: absolute;
-  right: 0;
+  top: 0;
+  right: 100px;
   margin-top: 20px;
   margin-right: 40px;
 }
 
 .buttons {
   position: absolute;
-  right: 200px;
+  right: 100px;
   bottom: 20px;
 }
 
@@ -71,6 +87,11 @@ ul {
   border-radius: 20px;
   border: 1px solid;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: green;
 }
 
 /* Header end */
@@ -98,6 +119,7 @@ ul {
 
 ul li {
   margin-left: 30px;
+  cursor: pointer;
 }
 
 ul li:first-child {
@@ -119,5 +141,73 @@ li:hover {
 /* Main start */
 .main {
   background-color: rgba(205, 205, 205, 0.29);
+  position: relative;
+}
+
+.projects {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.cards {
+  width: 100;
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-columns: 400px 400px;
+  grid-gap: 30px;
+  overflow: hidden;
+  word-break: break-all;
+  margin-top: 10px;
+}
+
+.card {
+  border: 0.5px solid black;
+  border-left-color: orange;
+  border-left-width: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.announcements {
+  width: 300px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.items {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  background-color: white;
+  padding-left: 20px;
+  overflow: hidden;
+  word-break: break-all;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.trending {
+  width: 300px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+
+
+}
+
+.trending_items {
+  display: grid;
+  grid-template-rows: 5;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 100px;
+  margin-top: 10px;
+}
+
+.trending_item {
+  text-align: center;
+  margin-top: 20px;
 }
 /* Main end */
