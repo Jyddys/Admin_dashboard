@@ -21,30 +21,63 @@ ul {
 
 /* Header start */
 .header {
-  background-color: green;
+  background-color: white;
   grid-column: 2 ;
+  position: relative;
 }
 /* Search bar */
 
-.search {
-  position: relative;
-}
 .searchTerm {
   position: absolute;
-  left: 10%;
+  left: 5%;
+  padding: 5px;
   margin-top: 20px;
   width: 30%;
-  background-color: rgb(227, 227, 227);
+  background-color: rgba(205, 205, 205, 0.29);
   border-radius: 10px;
 }
 
+/* Greeting */
 
+.greeting {
+ width: 300px;
+ position: absolute;
+ left: 5%;
+ bottom: 20px;
+
+  
+ 
+}
+/* Avatar */
+
+.avatar {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.buttons {
+  position: absolute;
+  right: 200px;
+  bottom: 20px;
+}
+
+.buttons button {
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid;
+  margin-right: 20px;
+}
 
 /* Header end */
 
 /* Sidebar start */
 .sidebar {
-  background-color: rgb(34, 110, 241);
+  background-color: #0ea5e9;
   grid-column-start: 1;
   grid-row: 1 / 4;
 }
@@ -76,7 +109,7 @@ ul {
 }
 
 li:hover {
-  color: yellow;
+  color: black;
 }
 
 
@@ -85,6 +118,6 @@ li:hover {
 
 /* Main start */
 .main {
-  background-color: red;
+  background-color: rgba(205, 205, 205, 0.29);
 }
 /* Main end */
