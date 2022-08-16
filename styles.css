@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+  
+}
+
+/* Header start */
+.header {
+  background-color: green;
+  grid-column: 2 ;
+}
+/* Search bar */
+
+.search {
+  position: relative;
+}
+.searchTerm {
+  position: absolute;
+  left: 10%;
+  margin-top: 20px;
+  width: 30%;
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+}
+
+
+
+/* Header end */
+
+/* Sidebar start */
+.sidebar {
+  background-color: rgb(34, 110, 241);
+  grid-column-start: 1;
+  grid-row: 1 / 4;
+}
+
+.sidebar .logo {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 2px;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+
+ul li {
+  margin-left: 30px;
+}
+
+ul li:first-child {
+  margin-top: 20px;
+}
+
+ul {
+  line-height: 40px
+}
+
+li:hover {
+  color: yellow;
+}
+
+
+
+/* Sidebar end */
+
+/* Main start */
+.main {
+  background-color: red;
+}
+/* Main end */
