@@ -6,3 +6,4 @@ This is Grid project from TheOdinProject. This is also my first "real" project m
 https://jyddys.github.io/Admin_dashboard/
 
 Webpage is not responsible.
+Just layout no text or content.
